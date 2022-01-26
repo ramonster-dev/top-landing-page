@@ -51,7 +51,7 @@ table {
 header,
 .hero,
 footer {
-    background-color: #1F2937;
+    background-color: #394032;
 }
 
 /* Header */
@@ -63,14 +63,18 @@ header {
 }
 
 header > h1 {
-    font-size: 24px;
+    font-size: 64px;
+    font-family: 'Cinzel', 'Helvetica', serif;
+    font-weight: 900;
     color: #F9FAF8;
 }
 
 nav ul {
     display: flex;
-    gap: 12px;
+    gap: 20px;
     font-size: 18px;
+    font-family: 'Cinzel', 'Helvetica', serif;
+    font-weight: 600;
 }
 
 nav a {
@@ -78,12 +82,25 @@ nav a {
     color: #E5E7EB;
 }
 
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #F9FAF8;
+    transition: width .3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
 /* Hero */
 .hero {
     height: 330px;
-    padding: 0 120px;
+    padding: 60px 120px;
     display: flex;
-    gap: 60px;
+    gap: 100px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -98,26 +115,48 @@ nav a {
 
 .hero-desc > h2 {
     font-size: 48px;
-    font-weight: bolder;
+    font-weight: 600;
+    font-family: 'Cinzel', 'Helvetica', serif;
     color: #F9FAF8;
 }
 
-.hero-desc > p,
-.hero-desc > a {
+.hero-desc > p {
     font-size: 18px;
+    font-weight: 300;
     color: #E5E7EB;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #F9FAF8;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-img img {
+    height: 350px;
 }
 
 .btn {
-    background-color: #3882F6;
-    width: 90px;
+    background-color: #D4D6B9;
+    width: 120px;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     border-radius: 5px;
-    color: #E5E7EB;
+    color: #394032;
     padding: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+    background-color: #394032;
+    color: #D4D6B9;
+    border: 2px solid #D4D6B9;
 }
 
 /* Information */
@@ -125,8 +164,9 @@ h3 {
     text-align: center;
     padding-top: 60px;
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: 300;
     color: #1F2937;
+    font-family: 'Cinzel', 'Helvetica', serif;
 }
 
 .info-tiles {
@@ -136,6 +176,8 @@ h3 {
     gap: 8%;
     text-align: center;
     padding: 60px 180px;
+    font-family: 'Cinzel', 'Helvetica', serif;
+    font-weight: 300;
 }
 
 .tile {
@@ -144,51 +186,59 @@ h3 {
 
 /* Testimonial */
 .testimonial {
-    padding: 60px 220px;
+    padding: 60px 360px;
     background-color: #E5E7EB;
 }
 
 .quote {
     text-align: center;
     font-size: 36px;
-    font-weight: lighter;
+    font-weight: 600;
     font-style: italic;
     color: #1F2937;
     padding-bottom: 20px;
+    font-family: 'Cinzel', 'Helvetica', serif;
+    line-height: 1.4;
 }
 
 .quoter {
     text-align: right;
     padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #1F2937;
 }
 
 /* Call to action */
 .call-to-action {
     height: 100px;
-    background-color: #3882F6;
-    margin: 80px 130px;
-    padding: 0 80px;
+    background-color: #394032;
+    margin: 80px 300px;
+    padding: 15px 80px;
     border-radius: 11px;
 
     display: flex;
     justify-content: space-between;
+    font-weight: 300;
     align-items: center;
 }
 
 .cta-text {
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
     color: #E5E7EB;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
 }
 
 .cta-text h5 {
-    font-weight: bold;
+    font-weight: 900;
+    font-family: 'Cinzel', 'Helvetica', serif;
+    font-size: 22px;
 }
 
 .btn-cta {
-    border: 1px solid white;
     padding: 5px 15px;
 }
 
@@ -199,6 +249,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: #F9FAF8;
+    font-family: 'Roboto', sans-serif;
 }
 
 
