@@ -62,6 +62,8 @@ header {
     padding: 20px 120px;
 }
 
+
+
 header > h1 {
     font-size: 64px;
     font-family: 'Cinzel', 'Helvetica', serif;
@@ -93,6 +95,10 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%;
+}
+
+header:hover {
+	background-color: #363d30;
 }
 
 /* Hero */
@@ -136,8 +142,9 @@ nav a:hover::after {
     font-family: 'Roboto', sans-serif;
 }
 
-.hero-img img {
+.hero-img video {
     height: 350px;
+	box-shadow: 2px 2px 3px black;
 }
 
 .btn {
@@ -173,7 +180,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8%;
+    gap: 2%;
     text-align: center;
     padding: 60px 180px;
     font-family: 'Cinzel', 'Helvetica', serif;
@@ -181,22 +188,41 @@ h3 {
 }
 
 .tile {
-    width: 150px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+    width: 300px;
 }
 
 /* Testimonial */
 .testimonial {
-    padding: 60px 360px;
     background-color: #E5E7EB;
+	display: flex;
+	gap:70px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonial-tile {
+	background-color: #394032;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 80px 120px;
+	padding: 80px 60px;
+	border-radius: 11px;
+	gap: 70px;
+
 }
 
 .quote {
-    text-align: center;
-    font-size: 36px;
+    text-align: left;
+    font-size: 24px;
     font-weight: 600;
     font-style: italic;
-    color: #1F2937;
-    padding-bottom: 20px;
+    color: #f9faf8;
+    padding-bottom: 10px;
     font-family: 'Cinzel', 'Helvetica', serif;
     line-height: 1.4;
 }
@@ -204,10 +230,24 @@ h3 {
 .quoter {
     text-align: right;
     padding-right: 30px;
+	margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    color: #1F2937;
+    color: #f9faf8;
 }
+
+.testimonial img {
+	height: 400px;
+	box-shadow: 2px 2px 3px black;
+	padding: 12px;
+	border-radius: 11px;
+	background-color: #f9faf8;
+}
+
+.btn-testimonial {
+	padding: 8px 20px;
+}
+
 
 /* Call to action */
 .call-to-action {
@@ -251,7 +291,3 @@ footer {
     color: #F9FAF8;
     font-family: 'Roboto', sans-serif;
 }
-
-
-
-
